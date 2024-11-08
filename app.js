@@ -109,7 +109,6 @@ window.addEventListener('load', function(){
     genrate(todoArray)
     }
 
-    input.focus()
 })
 
 deletealbtn.addEventListener('click', deleteal)
