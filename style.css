@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #F6F1EE;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.todo-project{
+    width: 80%;
+    padding: 5px;
+}
+
+.todo-inputdiv{
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    position: fixed;
+    background-color: aliceblue;
+    top: 60px;
+    transition: all 0.01s;
+}
+
+.input{
+    width: 70%;
+    height: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.input-btn{
+    display: flex;
+    width: 150px;
+    align-items: center;
+}
+
+.addbtn{
+    height: 4vh;
+    width: 55%;
+    border-radius: 2px 7px 2px 7px ;
+    
+}
+
+.deletealbtn{
+    height: 4vh;
+    width: 45%;
+    background-color: rgba(255, 0, 0, 0.699);
+    border-radius: 7px 2px 7px 2px;
+}
+
+.todo-list{
+    padding: 2px;
+    margin-top: 60px;
+}
+
+.todo-li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    min-height: 45px;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 1px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    background-color: white; 
+}
+
+button{
+    margin: 1px;
+}
+
+.todo-btndiv{
+    display: flex;
+    width: 150px;
+    align-items: center;
+}
+
+.completbtn{
+    height: 4vh;
+    width: 55%;
+    background-color: rgb(38, 172, 38);
+    border-radius: 10px 10px 10px 0px;
+}
+
+.deletebtn{
+    height: 4vh;
+    width: 45%;
+    background-color: rgba(255, 0, 0, 0.699);
+    border-radius: 10px 10px 0px 10px;
+}
+
+.pclass{
+    font-size: 20px;
+    font-weight: bold;
+    word-wrap: break-word;
+    width: 80%;
+    height: auto;
+}
+
+.pclass-not{
+    font-weight: normal;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.title{
+    background-color: aqua;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .pclass{width: 65%;}
+    .todo-project{width: 100%;}
+    .todo-inputdiv{width: 97%;}
+    .input-btn{width: 105px;}
+    .todo-btndiv{width: 120px;}
+    .wellcome{padding: 20px;}
+}
